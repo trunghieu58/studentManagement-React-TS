@@ -1,0 +1,56 @@
+@baseUrl = https://js-post-api.herokuapp.com/api
+
+#Students
+
+# @name getAllStudents
+GET {{baseUrl}}/students?name_like=Hieu&_page=1&_limit=15
+# GET {{baseUrl}}/students?_page=1&_limit=5&_sort=mark&_order=asc
+
+######
+
+# @name getStudentById
+GET {{baseUrl}}/students/1a90afd3-af05-42a5-88d5-a297d387f164
+
+######
+
+# @name addNewStudent
+POST {{baseUrl}}/students
+Content-Type: application/json
+
+{
+    "id": "b06c2021-8068-4aec-v744-a0e502d5771",
+    "name": "Le Anh Dung",
+    "age": 22,
+    "mark": 7.6,
+    "gender": "male",
+    "createdAt": 1623512826712,
+    "updatedAt": 1623512826712,
+    "city": "hn"
+}
+
+
+####
+
+# @name updateStudent
+PATCH {{baseUrl}}/students/b06c2021-8968-4aec-a745-a0e502d577c1
+Content-Type: application/json
+
+{
+    "city": "hn"
+}
+
+######
+
+# @name removeStudent
+DELETE {{baseUrl}}/students/b06c2021-8968-4aec-a745-a0e502d577c1
+
+
+{
+    "id": "b06c2021-8968-4aec-a745-a0e502d577c1",
+    "name": "Shyann Goodwin",
+    "age": 19,
+    "mark": 9.6,
+    "gender": "female",
+    "createdAt": 1623512826712,
+    "updatedAt": 1623512826712
+  }

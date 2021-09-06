@@ -1,0 +1,20 @@
+{
+    "tslint.jsEnable": true,
+    "tslint.alwaysShowRuleFailuresAsWarnings": true,
+    "tslint.autoFixOnSave": false,
+    "bracketPairColorizer.forceIterationColorCycle": true,
+    "bracketPairColorizer.scopeLineRelativePosition": false,
+    "files.autoGuessEncoding": true,
+    "diffEditor.codeLens": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "eslint.format.enable": true,
+    "eslint.lintTask.enable": true,
+    "markdown.preview.doubleClickToSwitchToEditor": false,
+    "markdown.preview.linkify": false,
+    "markdown.preview.markEditorSelection": false,
+    "markdown.preview.scrollEditorWithPreview": false,
+    "tslint.validateWithDefaultConfig": true,
+    "tslint.configFile": ".ts"
+}

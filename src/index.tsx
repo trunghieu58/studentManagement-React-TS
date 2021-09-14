@@ -1,22 +1,36 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import { store } from './app/store';
-import { Provider } from 'react-redux';
-import * as serviceWorker from './serviceWorker';
 import { CssBaseline } from '@material-ui/core';
 import { ConnectedRouter } from 'connected-react-router';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { history } from 'utils';
+import App from './App';
+import { store } from './app/store';
+import './index.css';
+import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-    <Provider store={store}>
-      <ConnectedRouter history={history}>
-        <CssBaseline>
-          <App />
-        </CssBaseline>
-      </ConnectedRouter>
-    </Provider>,
+  <Provider store={store}>
+    <ConnectedRouter history={history}>
+      <CssBaseline>
+        <App />
+
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss={false}
+          draggable
+          pauseOnHover
+        />
+      </CssBaseline>
+    </ConnectedRouter>
+  </Provider>,
   document.getElementById('root')
 );
 

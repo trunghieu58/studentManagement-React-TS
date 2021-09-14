@@ -17,16 +17,16 @@ GET {{baseUrl}}/students/1a90afd3-af05-42a5-88d5-a297d387f164
 POST {{baseUrl}}/students
 Content-Type: application/json
 
-{
-    "id": "b06c2021-8068-4aec-v744-a0e502d5771",
-    "name": "Le Anh Dung",
-    "age": 22,
-    "mark": 7.6,
-    "gender": "male",
+  {
+    "id": "b06c2021-89dasdasd-a745-a0e502d577c1",
+    "name": "Hieu Test",
+    "age": 19,
+    "mark": 9.6,
+    "gender": "female",
     "createdAt": 1623512826712,
     "updatedAt": 1623512826712,
-    "city": "hn"
-}
+    "city": "pt"
+  }
 
 
 ####
@@ -42,15 +42,16 @@ Content-Type: application/json
 ######
 
 # @name removeStudent
-DELETE {{baseUrl}}/students/b06c2021-8968-4aec-a745-a0e502d577c1
+DELETE {{baseUrl}}/students/yK6MRQn
 
 
 {
-    "id": "b06c2021-8968-4aec-a745-a0e502d577c1",
-    "name": "Shyann Goodwin",
+    "id": "b06c2021-89dasec-a745-a0e502d577c1",
+    "name": "Hieu Test",
     "age": 19,
     "mark": 9.6,
     "gender": "female",
     "createdAt": 1623512826712,
-    "updatedAt": 1623512826712
+    "updatedAt": 1623512826712,
+    "city": "pt"
   }

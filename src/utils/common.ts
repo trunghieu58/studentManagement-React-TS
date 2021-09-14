@@ -1,6 +1,9 @@
 import { City } from './../models/city';
 
-export const capitalizeString = (value: string) => {
+export const capitalizeString = (value: "male" | "female") => {
+    if (value === undefined) {
+        return
+    }
     return value.charAt(0).toUpperCase() + value.slice(1)
 }
 
@@ -33,6 +36,7 @@ export const markColor = (mark: number) => {
 }
 
 export const convertCityTest = (cityList: City[], value: string) => {
+    
     let cityName = ''
     // eslint-disable-next-line array-callback-return
     cityList.map(city => {

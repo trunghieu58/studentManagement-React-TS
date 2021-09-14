@@ -42,7 +42,7 @@ const studentSlice = createSlice({
 
     addStudent(state, action: PayloadAction<Student>) {},
 
-    deleteStudent(state, action: PayloadAction<string>) {},
+    UpdateStudent(state, action: PayloadAction<Student>) {},
 
     setFilter(state, action: PayloadAction<listParams>) {
       state.filter = action.payload;
